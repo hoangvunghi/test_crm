@@ -13,7 +13,7 @@ urlpatterns = [
     path("api/", include("employee.urls")),
     
     path("api/schema/",SpectacularAPIView.as_view(),name="schema"),
-    path("docs/",SpectacularSwaggerView.as_view(url_name="schema")),
+    path("",SpectacularSwaggerView.as_view(url_name="schema")),
     path("redoc/",SpectacularRedocView.as_view(url_name="schema")),
 ]
 
