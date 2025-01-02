@@ -23,7 +23,10 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://test-crm-ext3.onrender.com',
+    'https://www.test-crm-ext3.onrender.com',
+]
 
 # Application definition
 
